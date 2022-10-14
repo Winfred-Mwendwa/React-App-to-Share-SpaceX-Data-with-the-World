@@ -2,9 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-.home {
+.content-home {
+  height: 700px;
   background-image: url('./spacex-2657091.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 
 }
+
+.content-search {
+  height: 700px;
+  background-image: url('./virginia.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.content-datagrid {
+  height: 700px;
+}
+
