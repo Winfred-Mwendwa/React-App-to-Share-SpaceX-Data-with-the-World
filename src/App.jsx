@@ -8,9 +8,9 @@ function App() {
             <Header />
           </div>
           <div className='content-home text-center'>
-            <Home />
+            
             <div>
-              <h1 className='text-3xl md:text-6xl lg:text-8xl'>
+              <h1 className='text-3xl md:text-6xl lg:text-8xl pt-500'>
               Revolutionizing Space Technology
 
             </h1>
