@@ -2,19 +2,18 @@ import { Datagrid, Header, Home, Search } from './components/common'
 
 function App() {
     return (
-      <div className="min-h-screen flex flex-col text-black">
-        <main className="container mx-auto px-6 pt-16 flex-1 text-center">
-          <div >
+      <div className="min-h-screen flex flex-col">
+        <main className="container mx-auto px-0 pt-6 flex-1 text-center">
+          
+          <div className='content-home text-center text-white'>
             <Header />
-          </div>
-          <div className='content-home text-center'>
             
             <div>
-              <h1 className='text-3xl md:text-6xl lg:text-8xl pt-500'>
+              <h1 className='text-1xl md:text-2xl lg:text-5xl pt-60 uppercase'>
               Revolutionizing Space Technology
 
             </h1>
-            <h2 className='text-2xl md:text-4xl lg:text-6xl'>
+            <h2 className='text-1xl md:text-2xl lg:text-3xl uppercase'>
               Advancing the future
 
             </h2>
