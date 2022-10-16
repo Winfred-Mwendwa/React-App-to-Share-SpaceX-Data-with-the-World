@@ -6,8 +6,8 @@ function Navbar () {
     return (
         <header>
    <div class="container"> 
-      <nav class="navbar text-white">
-         <a href="#" class="nav-branding">DEV.</a>
+      <nav class="navbar">
+         <a href="#" class="nav-branding">W.</a>
          <ul class="nav-menu">
             <li class="nav-item">
                <a href="#" class="nav-link">Home</a>
