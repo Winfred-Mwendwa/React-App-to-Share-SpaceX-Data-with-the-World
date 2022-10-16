@@ -2,25 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.content-home {
-  height: 700px;
-  background-image: url('./spacex-2657091.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-
-}
-
-.content-search {
-  height: 700px;
-  background-image: url('./virginia.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-
-}
-
-.content-datagrid {
-  height: 700px;
-}
 
 /*css reset*/
 
@@ -50,6 +31,8 @@ html:focus-within {
 }
 html, body {
     height:100%;
+    width:100%;
+    
 }
 /* Set core body defaults */
 body {
@@ -87,6 +70,38 @@ picture, svg {
     scroll-behavior: auto !important;
   }
 }
+
 /*end of css reset*/
+
+.content-home {
+  height: 700px;
+  background-image: url('./spacex-2657091.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: -24px;
+
+}
+
+.content-search {
+  height: 700px;
+  background-image: url('./virginia.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: -24px;
+
+}
+
+.content-datagrid {
+  height: 700px;
+  position: relative;
+  top: -24px;
+}
+
+.learn:hover {
+  color:black;
+
+}
 
 
