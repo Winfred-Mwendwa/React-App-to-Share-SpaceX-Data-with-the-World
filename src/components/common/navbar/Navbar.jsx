@@ -1,26 +1,32 @@
 import React from 'react';
+
 import './Navbar.css';
 
 function Navbar () {
     return (
-        
-            <nav>
-            <div class="openMenu"><i class="fa fa-bars"></i></div>
-            <ul class="mainMenu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Search</a></li>
-                <li><a href="#">Categories</a></li>
-                <div class="closeMenu"><i class="fa fa-times"></i></div>
-                <span class="icons">
-                    <i class="fab fa-facebook"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-twitter"></i>
-                </span>
-            </ul>
-            </nav>
-            
-        
-        
+        <header>
+   <div class="container"> 
+      <nav class="navbar text-white">
+         <a href="#" class="nav-branding">DEV.</a>
+         <ul class="nav-menu">
+            <li class="nav-item">
+               <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+               <a href="#" class="nav-link">Search</a>
+            </li>
+            <li class="nav-item">
+               <a href="#" class="nav-link">Categories</a>
+            </li>
+         </ul>
+         <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+         </div>
+      </nav>
+   </div>
+</header>
     )
 }
 

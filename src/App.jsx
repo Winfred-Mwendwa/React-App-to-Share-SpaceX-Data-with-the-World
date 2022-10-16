@@ -3,9 +3,9 @@ import { Datagrid, Header, Search} from './components/common'
 function App() {
     return (
       <div className="min-h-screen flex flex-col">
-        <main className="container mx-auto px-0 pt-6 flex-1">
+        <main className="container mx-auto px-0 pt-6 flex-1 text-white">
           
-          <div className='content-home text-white'>
+          <div className='content-home'>
             <div>
             <Header />
 
