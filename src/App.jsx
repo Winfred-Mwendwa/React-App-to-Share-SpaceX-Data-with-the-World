@@ -1,4 +1,4 @@
-import { Datagrid, Header, Search} from './components/common'
+import { Catalogue, Header, Search} from './components/common'
 
 function App() {
     return (
@@ -17,7 +17,7 @@ function App() {
               Revolutionizing Space Technology
               </h1>
               <div className='pt-6 learn'>
-              <a href="#">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+              <a href="#">Learn more <i className="fa-solid fa-arrow-right"></i></a>
               </div>
               
             
@@ -25,10 +25,13 @@ function App() {
             </div>
             
           </div>
-          <div className='content-search'>
+          <div className='content-search grid gap-1 place-content-center justify-items-stretch'>
             <Search /></div>
-          <div className='content-datagrid' >
-            <Datagrid />
+          <div className='content-datagrid text-black flex flex-wrap items-center justify-evenly ' >
+            
+            <Catalogue />
+            
+            
 
           </div>
           
