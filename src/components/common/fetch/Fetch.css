@@ -1,4 +1,4 @@
-.image {
+.card-image {
     cursor: pointer;
     background: rgb(231, 231, 231);
     border-radius: 20px;
@@ -11,13 +11,13 @@
     
 }
 
-.image img {
+.card-image img {
     width:100%;
     height:100%;
     object-fit: cover;
     border-radius:4px;
 }
 
-.image:hover {
+.card-image:hover {
     transform: scale(1.1);
 }
