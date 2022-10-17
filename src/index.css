@@ -85,7 +85,7 @@ picture, svg {
 
 .content-search {
   height: 700px;
-  background-image: url('./virginia.jpg');
+  background-image: linear-gradient(rgba(0,8,51,0.9),rgba(0,8,51,0.9)) ,url('./virginia.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
