@@ -1,4 +1,4 @@
-import { Header, Search, Fetch} from './components/common'
+import { Header, Search} from './components/common'
 
 function App() {
     return (
@@ -23,14 +23,13 @@ function App() {
             </div>
             
           </div>
-          <div className='content-search grid gap-1 place-content-center justify-items-stretch'>
-            <Search /></div>
+          
+            <Search />
 
-          <div className='content-fetch text-black flex flex-wrap items-center justify-evenly'>
+          
+            
 
-            <Fetch />
-
-          </div> 
+          
         </main>
 
       </div>
