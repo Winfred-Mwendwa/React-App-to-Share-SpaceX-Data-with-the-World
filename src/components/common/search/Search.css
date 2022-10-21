@@ -8,7 +8,7 @@
 
 .search-wrapper input {
     width:100%;
-    max-width: 900px;
+    max-width: 1000px;
     border-radius: 60px;
     flex:1;
     background: rgba(255,255,255, 0.4);
@@ -19,12 +19,12 @@
 }
 .card-image {
     cursor: pointer;
-    background: rgb(231, 231, 231);
+    
     border-radius: 20px;
-    margin: 2rem 4rem;
+   
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    padding: 1rem 2rem;
+    
     transition: all 0.3s ease;
     width:500px;
     

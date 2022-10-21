@@ -2,13 +2,18 @@ import React from 'react';
 import './Search.css';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import Pagination from '../pagination';
 
 function Search () {
+    
     const [error, setError] = useState(null);
     const [loaded, setLoaded] = useState(false);
     const [items, setItems] = useState([]);
     const [query, setQuery] = useState("");
+    const [currentPage, setCurrentPage] = useState(1);
+    const [recordsPerPage] = useState(1);
     
+
      useEffect(() => {
       const request_headers = new Headers();
       
@@ -32,10 +37,16 @@ function Search () {
           }
         );
     }, []);
-    
     const data = Object.values(items);
+    const indexOfLastRecord = currentPage * recordsPerPage;
+    const indexOfFirstRecord = indexOfLastRecord - recordsPerPage;
+    const currentRecords = data.slice(indexOfFirstRecord, indexOfLastRecord);
+    const nPages = Math.ceil(data.length / recordsPerPage)
+    
+    
     
     const search_parameters = Object.keys(Object.assign({}, ...data));
+
 
     function search(items) {
         return items.filter((item) =>
@@ -53,7 +64,7 @@ function Search () {
         return (
             <div className='content-search grid gap-1 place-content-center justify-items-stretch text-black'>
                 <div className='search-wrapper'>
-                    <label htmlFor="search-form">
+                    
 
                         <input type="search" 
                         
@@ -65,11 +76,11 @@ function Search () {
                         />
                         
                         <span className='visually-hidden'>search by rocket name</span>
-                    </label>
+                    
 
                 </div>
                 <div className='search-wrapper'>
-                    <label htmlFor="search-form">
+                    
                         <input type="search" 
                         name='search-form'
                         id='search-form'
@@ -78,11 +89,11 @@ function Search () {
                         onChange={(e) => setQuery(e.target.value)}
                         />
                         <span className='visually-hidden'>search by launch year</span>
-                    </label>
+                    
 
                 </div>
                 <div className='search-wrapper'>
-                    <label htmlFor="search-form">
+                    
                         <input type="search" 
                         name='search-form'
                         id='search-form'
@@ -91,32 +102,38 @@ function Search () {
                         onChange={(e) => setQuery(e.target.value)}
                         />
                         <span className='visually-hidden'>search by payload</span>
-                    </label>
+                    
 
                 </div>
                 <div className="wrapper">
                     <ul className="card-grid">
-                        {search(data).map((item) => (
+                        {search(currentRecords).slice(0, currentPage).map((item) => (
                         <li key={item.id}>
-                            <article className="card">
+                            
                                 <div className="card-image">
                                     <img src={item.flickr_images[0]} alt={item.rocket_name} />
                                     
                                 </div>
-                                <div className="card-content">
-                                    <h2 className="card-name hover:text-cyan-300">{item.rocket_name}</h2>
-                                    
-                                </div>
                                 
-                            </article>
+                                    <h2 className=" hover:text-cyan-300">{item.rocket_name}</h2>
+                                    
+                                
+                                
+                            
 
                         </li>
 
                         ))}
                 
                     </ul>
+                    <Pagination
+                nPages={nPages}
+                currentPage={currentPage}
+                setCurrentPage={setCurrentPage}
+            />
             
                 </div>
+                
 
             </div>
             
