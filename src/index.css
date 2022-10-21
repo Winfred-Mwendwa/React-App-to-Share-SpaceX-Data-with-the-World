@@ -80,11 +80,12 @@ picture, svg {
   background-size: cover;
   position: relative;
   top: -24px;
+  
 
 }
 
 .content-search {
-  height: 700px;
+  height: 900px;
   background-image: linear-gradient(rgba(0,8,51,0.9),rgba(0,8,51,0.9)) ,url('./virginia.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -94,7 +95,7 @@ picture, svg {
 }
 
 
-.learn:hover {
+.learn > a:hover {
   color:black;
 
 }

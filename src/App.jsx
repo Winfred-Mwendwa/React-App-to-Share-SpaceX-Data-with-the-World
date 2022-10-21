@@ -5,7 +5,7 @@ function App() {
       <div className="min-h-screen flex flex-col">
         <main className="container mx-auto px-0 pt-6 flex-1 text-white">
           
-          <div className='content-home'>
+          <div className='content-home text-white' id='home'>
             <div>
             <Header />
 
@@ -23,13 +23,10 @@ function App() {
             </div>
             
           </div>
-          
-            <Search />
-
-          
-            
-
-          
+          <div id='search'>
+          <Search />
+          </div>
+      
         </main>
 
       </div>

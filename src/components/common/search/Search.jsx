@@ -3,6 +3,8 @@ import './Search.css';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import Pagination from '../pagination';
+import Popup from '../popup';
+
 
 function Search () {
     
@@ -115,17 +117,15 @@ function Search () {
                                     
                                 </div>
                                 
-                                    <h2 className=" hover:text-cyan-300">{item.rocket_name}</h2>
-                                    
-                                
-                                
-                            
+                                    <h2 className=" hover:text-cyan-300 py-10 text-white">{item.rocket_name}</h2>
 
                         </li>
 
                         ))}
                 
                     </ul>
+                    <Popup />
+                    
                     <Pagination
                 nPages={nPages}
                 currentPage={currentPage}
@@ -137,7 +137,9 @@ function Search () {
 
             </div>
             
+            
         );
+        
     }
             
 
